@@ -49,42 +49,42 @@ def result(c,r,d,di):
     for i in range(0,3):
         if c[i]==30 or r[i]==30:
             if p1v==' X ':
-                print(f'{p1} nigga you win')
+                print(f'{p1} you win')
                 sys.exit()
             if p2v==' X ':
                 print(f'{p2} you win')
                 sys.exit()        
         if c[i]==300 or r[i]==300:
             if p1v==' O ':
-                print(f'{p1} nigga you win')
+                print(f'{p1} you win')
                 sys.exit()
             if p2v==' O ':
                 print(f'{p2} you win')
                 sys.exit()
         if d==300:
             if p1v==' O ':
-                print(f'{p1} nigga you win')
+                print(f'{p1} you win')
                 sys.exit()
             if p2v==' O ':
                 print(f'{p2} you win')
                 sys.exit()
         if d==30:
             if p1v==' X ':
-                print(f'{p1} nigga you win')
+                print(f'{p1} you win')
                 sys.exit()
             if p2v==' X ':
                 print(f'{p2} you win')
                 sys.exit()
         if di==30:
             if p1v==' X ':
-                print(f'{p1} nigga you win')
+                print(f'{p1} you win')
                 sys.exit()
             if p2v==' X ':
                 print(f'{p2} you win')
                 sys.exit()   
         if d==300:
             if p1v==' O ':
-                print(f'{p1} nigga you win')
+                print(f'{p1} you win')
                 sys.exit()
             if p2v==' O ':
                 print(f'{p2} you win')
