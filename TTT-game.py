@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import numpy as np
 import sys
 tic = [['---','---','---'], 
@@ -13,31 +10,11 @@ tac = [[0,0,0],
        [0,0,0],
        [0,0,0]]
 
-
-# In[2]:
-
-
 def primary_screen(tic):
     for row in tic:
         for elem in row:
             print(elem, end=" ")
         print()   
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[3]:
-
 
 def instructions():
     print('hello')
@@ -50,15 +27,7 @@ def instructions():
     print('     the program will place your designated x or o in the first row,second column element')
     print("4.   The one who gets the first diagonal,horizontal,vertical set of same 'x' or 'o' wins")
 
-
-# In[4]:
-
-
 instructions()
-
-
-# In[5]:
-
 
 print('hello players')
 p1=input('Name of first player : ')
@@ -72,17 +41,9 @@ if p1s=='o' or p1s=='O':
     p2v=' X '
 primary_screen(tic)    
 
-
-# In[6]:
-
-
 from random import seed
 from random import randint
 value=randint(1,2)
-
-
-# In[7]:
-
 
 def result(c,r,d,di):
     for i in range(0,3):
@@ -131,26 +92,12 @@ def result(c,r,d,di):
         else :
             pass
 
-
-# In[8]:
-
-
 def calc(tac):
     c=np.sum(a=tac,axis=0)
     r=np.sum(a=tac,axis=1)
     d=tac[0][0]+tac[1][1]+tac[2][2]
     di=tac[0][2]+tac[1][1]+tac[2][0]
     result(c,r,d,di)
-
-
-# In[ ]:
-
-
-
-
-
-# In[9]:
-
 
 if value==1:
     fp=p1
@@ -201,10 +148,6 @@ while count <8:
     calc(tac)
     primary_screen(tic) 
 
-
-# In[ ]:
-
-
 calc(tac)
 for i in range(0,3):
     for j in range(0,3):
@@ -213,22 +156,3 @@ for i in range(0,3):
             tac[i][j]=fnpv
             calc(tac)
 primary_screen(tic)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
