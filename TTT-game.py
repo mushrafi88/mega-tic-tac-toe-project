@@ -155,4 +155,6 @@ for i in range(0,3):
             tic[i][j]=fpv
             tac[i][j]=fnpv
             calc(tac)
+print(' ')
 primary_screen(tic)
+print('guess no one won')
